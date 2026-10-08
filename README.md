@@ -10,6 +10,9 @@ Anonymous reporting. Real experiences. Evidence over promises.
 
 No account. No email. No hiding behind marketing.
 
+
+<img width="3360" height="2100" alt="aiscam" src="https://github.com/user-attachments/assets/ebc63b24-69f9-4019-9689-bba58511497e" />
+
 ---
 
 ## Table of Contents
