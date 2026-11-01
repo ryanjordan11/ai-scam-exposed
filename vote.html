@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vote — AI Scam Exposed</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav>
+<div class="brand">AGENT<b>EXPOSED</b></div>
+<div><a href="index.html">Home</a><a href="report.html">Report</a><a href="vote.html">Vote</a><a href="benchmarks.html">Benchmarks</a><a href="companies.html">Companies</a></div>
+<div class="stamp">100% anonymous</div>
+</nav>
+
+<header class="hero"><div class="kicker">Anonymous voting</div><h1>WHAT'S<br><em>THE<br>WORST?</em></h1><p>Vote on agents, providers, and models. Add a model anonymously. Let the public record show what users actually encounter.</p></header>
+
+<div class="privacy"><strong>POWERED BY ANONYMOUS.</strong><small>Vote without signing up. Select as many as you want. Click again to remove your vote. This prototype stores votes in this browser.</small></div>
+
+<section class="section" id="vote"><div class="poll-intro"><div><div class="label">The real vote</div><h2>WHAT'S<br>THE WORST?</h2></div><p class="muted">Vote on agents, providers, and models. Add a model anonymously. Let the public record show what users actually encounter.</p></div><div class="poll-grid"><article class="poll"><h3>Worst agent / company</h3><div id="agents"></div><small id="agentsMine" class="muted"></small></article><article class="poll"><h3>Worst provider</h3><div id="providers"></div><small id="providersMine" class="muted"></small></article><article class="poll"><h3>Worst model</h3><div id="models"></div><small id="modelsMine" class="muted"></small><div class="add"><input id="newModel" placeholder="Add a model"><button onclick="addModel()">Add</button></div></article></div></section>
+
+<section class="section"><div class="label">Live results</div><h2>THE<br>LIVE<br>RECORD.</h2><div id="board"></div></section>
+
+<div class="footer"><span>AI SCAM EXPOSED / COMPLETE PUBLIC RECORD</span><span>Proof over promises.</span></div>
+</div>
+<script src="script.js"></script>
+<script>renderPoll();</script>
+</body>
+</html>

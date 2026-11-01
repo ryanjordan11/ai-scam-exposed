@@ -1,0 +1,21 @@
+{
+  "name": "ai-scam-exposed",
+  "version": "1.0.0",
+  "description": "**They make the claims. You bring the receipts.**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanjordan11/ai-scam-exposed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ryanjordan11/ai-scam-exposed/issues"
+  },
+  "homepage": "https://github.com/ryanjordan11/ai-scam-exposed#readme"
+}

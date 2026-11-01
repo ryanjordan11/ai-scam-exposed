@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Report — AI Scam Exposed</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<nav>
+<div class="brand">AGENT<b>EXPOSED</b></div>
+<div><a href="index.html">Home</a><a href="report.html">Report</a><a href="vote.html">Vote</a><a href="benchmarks.html">Benchmarks</a><a href="companies.html">Companies</a></div>
+<div class="stamp">100% anonymous</div>
+</nav>
+
+<header class="hero"><div class="kicker">Public reporting desk</div><h1>REPORT<br><em>THE<br>AGENT.</em></h1><p>Tell us what the agent claimed, what it actually did, and what you could verify. Screenshots, logs, diffs, and reproducible examples support review but are not required to submit a report.</p></header>
+
+<div class="privacy"><strong>POWERED BY ANONYMOUS.</strong><small>No account, name, or email required. Anyone can report. Evidence is optional for submission; verification must be earned.</small></div>
+
+<section class="section grid" id="report"><div><div class="label">Public reporting desk</div><h2>REPORT<br>THE AGENT.</h2><p class="muted">Tell us what the agent claimed, what it actually did, and what you could verify. Screenshots, logs, diffs, and reproducible examples support review but are not required to submit a report.</p><div class="principle">Anyone can report.<br>Claims of verification must be earned.</div></div><form class="form" id="reportForm"><h3>New exposure report</h3><div class="field"><label>Headline</label><input id="title" maxlength="120" required placeholder="It said it finished. The file was never changed."></div><div class="row"><div class="field"><label>Agent / optional</label><select id="agent"><option value="">Choose</option><option>Claude</option><option>StepFun</option><option>OpenAI</option><option>Cohere</option><option>OpenCode</option><option>Kilo</option><option>Other</option></select></div><div class="field"><label>Your agent / optional</label><input id="customAgent" placeholder="Type an agent name"></div></div><div class="row"><div class="field"><label>Model / optional</label><input id="model" placeholder="Claude Sonnet, GPT, etc."></div><div class="field"><label>Provider / optional</label><input id="provider" placeholder="Anthropic, OpenAI, etc."></div></div><div class="field"><label>What did the AI claim it did, and what actually happened?</label><textarea id="story" maxlength="1000" required oninput="chars()" placeholder="Describe the claim, actual result, and what you could or could not verify."></textarea><small id="counter" class="muted">0 / 1,000 characters</small></div><div class="field"><label>Evidence / optional</label><label class="upload">＋ Attach screenshot, log, diff, or image<input id="evidence" type="file" accept="image/*" onchange="preview(event)"></label><div class="preview" id="previewBox"><img id="previewImage"><small id="fileName" class="muted"></small></div></div><div class="warning"><strong>Protect your privacy before uploading.</strong><br>Remove API keys, credentials, private messages, personal information, and confidential files. Do not upload material you cannot share.</div><button type="submit">Publish report ↗</button><p id="formNotice" class="muted">New reports begin as <strong>Unverified</strong>.</p></form></section>
+
+<section class="section feed" id="feed"><div class="label">Public reports</div><h2>REPORTS<br>RECEIVED.</h2><div id="reportList"></div></section>
+
+<div class="footer"><span>AI SCAM EXPOSED / COMPLETE PUBLIC RECORD</span><span>Proof over promises.</span></div>
+</div>
+<script src="script.js"></script>
+<script>renderReports();</script>
+</body>
+</html>
